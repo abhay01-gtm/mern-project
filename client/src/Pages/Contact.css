@@ -1,0 +1,156 @@
+/* General section */
+.contact-section {
+  background: #000;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+  padding: 3rem 2rem;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+/* Grid layout */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image section */
+.contact-image {
+  text-align: center;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Form section */
+.contact-form {
+  background: #1a1a1a;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  margin-bottom: 2rem;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: #ff6f61;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background: #333;
+  border: 1px solid #ff6f61;
+}
+
+/* Submit button */
+.btn-submit {
+  width: 100%;
+  padding: 0.9rem;
+  background: #ff6f61;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #ff8a75;
+  transform: translateY(-2px);
+}
+
+/* Map section */
+.contact-map {
+  margin-top: 3rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-image {
+    order: -1; /* Image above form on mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  .contact-header p {
+    font-size: 1rem;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+  }
+  .form-subtitle {
+    font-size: 0.95rem;
+  }
+}

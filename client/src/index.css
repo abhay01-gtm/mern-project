@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 85%; /* 1rem = 10px */
+}
+
+body {
+  background-color: #000;  /* black background */
+  color: #fff;             /* default text white so visible */
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
