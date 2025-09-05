@@ -5,7 +5,7 @@ import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
-import Navbar from "./Components/navbar";
+import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Error from "./Pages/Error";
 import Logout from "./Pages/Logout";
