@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { useAuth } from '../store/auth';
 
-const navbar = () => {
+const Navbar = () => {
 const { isLoggedIn } = useAuth();
   return (
     <>
@@ -37,4 +37,4 @@ const { isLoggedIn } = useAuth();
   )
 }
 
-export default navbar;
+export default Navbar;
